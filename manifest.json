@@ -1,0 +1,23 @@
+{
+  "name": "नगर परिषद देऊळगाव राजा",
+  "short_name": "नगर परिषद",
+  "description": "नगर परिषद देऊळगाव राजा अधिकृत अॅप",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ff0a8a",
+
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

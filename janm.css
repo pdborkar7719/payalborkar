@@ -1,0 +1,486 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Mukta',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(180deg,#fff1f8,#f6f8fc);
+    color:#333;
+    overflow-x:hidden;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    background:linear-gradient(135deg,#ff007f,#ff4fa5);
+    color:#fff;
+    text-align:center;
+    padding:45px 20px;
+    border-radius:0 0 35px 35px;
+    box-shadow:0 15px 35px rgba(255,0,127,.25);
+    animation:fadeDown .8s;
+}
+
+header h1{
+    font-size:35px;
+    margin-bottom:10px;
+}
+
+header h1 i{
+    margin-right:10px;
+}
+
+header p{
+    font-size:17px;
+    opacity:.95;
+}
+
+/* ================= NOTICE ================= */
+
+.notice{
+
+    margin:30px 0;
+    background:#fff8e8;
+    border-left:6px solid #f59e0b;
+    border-radius:18px;
+    padding:18px;
+    display:flex;
+    align-items:flex-start;
+    gap:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.notice i{
+
+    font-size:30px;
+    color:#f59e0b;
+
+}
+
+.notice h3{
+
+    color:#d97706;
+    margin-bottom:6px;
+
+}
+
+/* ================= CARDS ================= */
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:25px;
+
+}
+
+.card{
+
+background:#fff;
+
+padding:25px;
+
+border-radius:22px;
+
+text-align:center;
+
+box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+transition:.35s;
+
+border:1px solid #f3f3f3;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.card::before{
+
+content:"";
+
+position:absolute;
+
+width:150px;
+
+height:150px;
+
+background:rgba(255,0,127,.05);
+
+border-radius:50%;
+
+top:-60px;
+
+right:-60px;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 20px 40px rgba(255,0,127,.18);
+
+}
+
+.icon{
+
+width:85px;
+
+height:85px;
+
+margin:auto;
+
+margin-bottom:20px;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background:linear-gradient(135deg,#ffe3f2,#ffd4ea);
+
+font-size:36px;
+
+color:#ff007f;
+
+transition:.3s;
+
+}
+
+.card:hover .icon{
+
+transform:rotate(8deg) scale(1.08);
+
+}
+
+.card h2{
+
+color:#ff007f;
+
+margin-bottom:10px;
+
+font-size:24px;
+
+}
+
+.card p{
+
+color:#666;
+
+line-height:1.7;
+
+margin-bottom:20px;
+
+}
+
+/* ================= BUTTON ================= */
+
+.card button{
+
+width:100%;
+
+padding:13px;
+
+border:none;
+
+border-radius:12px;
+
+background:linear-gradient(135deg,#ff007f,#ff4fa5);
+
+color:#fff;
+
+font-size:16px;
+
+font-weight:700;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.card button:hover{
+
+transform:scale(1.03);
+
+box-shadow:0 10px 25px rgba(255,0,127,.30);
+
+}
+
+/* ================= ANIMATION ================= */
+
+@keyframes fadeDown{
+
+from{
+
+opacity:0;
+
+transform:translateY(-40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+/* ================= DOCUMENTS ================= */
+
+.documents,
+.timeline,
+.faq,
+.contact{
+
+margin-top:30px;
+background:#fff;
+padding:25px;
+border-radius:22px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.documents h2,
+.timeline h2,
+.faq h2,
+.contact h2{
+
+color:#ff007f;
+margin-bottom:18px;
+
+}
+
+.documents ul{
+
+padding-left:22px;
+
+}
+
+.documents li{
+
+margin:12px 0;
+font-size:16px;
+
+}
+
+/* ================= TIMELINE ================= */
+
+.step{
+
+background:#fff0f8;
+padding:15px;
+margin:12px 0;
+border-left:5px solid #ff007f;
+border-radius:12px;
+font-weight:600;
+transition:.3s;
+
+}
+
+.step:hover{
+
+transform:translateX(8px);
+
+}
+
+/* ================= FAQ ================= */
+
+.faq-box{
+
+margin-top:15px;
+padding:18px;
+background:#fff7fb;
+border-radius:15px;
+border-left:5px solid #ff007f;
+
+}
+
+.faq-box h3{
+
+color:#ff007f;
+margin-bottom:8px;
+
+}
+
+.faq-box p{
+
+line-height:1.7;
+
+}
+
+/* ================= CONTACT ================= */
+
+.contact p{
+
+margin:12px 0;
+font-size:16px;
+
+}
+
+/* ================= BACK BUTTON ================= */
+
+.back-btn{
+
+width:100%;
+margin-top:30px;
+padding:15px;
+border:none;
+border-radius:14px;
+background:#ececec;
+font-size:17px;
+font-weight:700;
+cursor:pointer;
+transition:.3s;
+
+}
+
+.back-btn:hover{
+
+background:#dddddd;
+
+}
+
+/* ================= POPUP ================= */
+
+.popup{
+
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.55);
+display:none;
+justify-content:center;
+align-items:center;
+padding:20px;
+z-index:999;
+
+}
+
+.popup-box{
+
+width:100%;
+max-width:390px;
+background:#fff;
+padding:30px;
+border-radius:22px;
+text-align:center;
+animation:popup .35s ease;
+
+}
+
+.popup-box h2{
+
+color:#ff007f;
+margin-bottom:18px;
+
+}
+
+.popup-box p{
+
+margin:10px 0;
+line-height:1.8;
+
+}
+
+.popup-box button{
+
+width:100%;
+margin-top:18px;
+padding:12px;
+border:none;
+border-radius:12px;
+background:#ff007f;
+color:#fff;
+font-size:16px;
+cursor:pointer;
+
+}
+
+@keyframes popup{
+
+from{
+opacity:0;
+transform:scale(.8);
+}
+
+to{
+opacity:1;
+transform:scale(1);
+}
+
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+header h1{
+
+font-size:28px;
+
+}
+
+header p{
+
+font-size:15px;
+
+}
+
+.notice{
+
+flex-direction:column;
+
+}
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+.card{
+
+padding:20px;
+
+}
+
+.icon{
+
+width:70px;
+height:70px;
+font-size:30px;
+
+}
+
+.documents,
+.timeline,
+.faq,
+.contact{
+
+padding:20px;
+
+}
+
+}

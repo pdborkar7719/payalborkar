@@ -1,0 +1,278 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Mukta',sans-serif;
+}
+
+body{
+    background:linear-gradient(180deg,#fff0f8,#f6f7fb);
+    color:#333;
+}
+
+.container{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+}
+
+/* Header */
+
+header{
+    background:linear-gradient(135deg,#ff007f,#ff5ca8);
+    color:#fff;
+    text-align:center;
+    padding:40px 20px;
+    border-radius:0 0 35px 35px;
+    box-shadow:0 15px 35px rgba(255,0,127,.25);
+}
+
+header h1{
+    font-size:34px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:16px;
+    opacity:.95;
+}
+
+/* Notice */
+
+.notice{
+    margin:25px 0;
+    padding:18px;
+    background:#fff7df;
+    border-left:6px solid #ffb000;
+    border-radius:18px;
+    display:flex;
+    gap:15px;
+    align-items:flex-start;
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+}
+
+.notice i{
+    font-size:28px;
+    color:#ff9900;
+}
+
+.notice h3{
+    color:#b36b00;
+    margin-bottom:6px;
+}
+
+/* Cards */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    border-radius:22px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transition:.35s;
+    border:1px solid #f2f2f2;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(255,0,127,.18);
+}
+
+.icon{
+    width:85px;
+    height:85px;
+    margin:auto;
+    margin-bottom:18px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#ffe0f0,#ffd0e7);
+    color:#ff007f;
+    font-size:35px;
+}
+
+.card h2{
+    color:#ff007f;
+    margin-bottom:10px;
+    font-size:24px;
+}
+
+.card p{
+    color:#666;
+    line-height:1.6;
+    margin-bottom:20px;
+}
+
+.card button{
+    width:100%;
+    border:none;
+    padding:13px;
+    border-radius:12px;
+    cursor:pointer;
+    color:#fff;
+    font-size:16px;
+    font-weight:700;
+    background:linear-gradient(135deg,#ff007f,#ff5ca8);
+    transition:.3s;
+}
+
+.card button:hover{
+    transform:scale(1.04);
+    box-shadow:0 10px 25px rgba(255,0,127,.30);
+}
+
+/* Common Sections */
+
+.documents,
+.process,
+.contact{
+    margin-top:30px;
+    background:#fff;
+    padding:25px;
+    border-radius:22px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.documents h2,
+.process h2,
+.contact h2{
+    color:#ff007f;
+    margin-bottom:18px;
+}
+
+.documents ul{
+    padding-left:22px;
+}
+
+.documents li{
+    margin:12px 0;
+}
+
+.step{
+    margin:12px 0;
+    padding:16px;
+    background:#fff0f8;
+    border-left:5px solid #ff007f;
+    border-radius:12px;
+    font-weight:600;
+}
+
+/* Back Button */
+
+.back-btn{
+    width:100%;
+    margin-top:30px;
+    padding:15px;
+    border:none;
+    border-radius:14px;
+    background:#ff007f,#ff5ca8;
+    font-size:17px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.back-btn:hover{
+    background:#dddddd;
+}
+
+/* Popup */
+
+.popup{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.55);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    z-index:999;
+}
+
+.popup-box{
+    width:100%;
+    max-width:380px;
+    background:#fff;
+    border-radius:22px;
+    padding:28px;
+    text-align:center;
+    animation:popup .35s ease;
+}
+
+.popup-box h2{
+    color:#ff007f;
+    margin-bottom:18px;
+}
+
+.popup-box p{
+    margin:12px 0;
+    line-height:1.7;
+}
+
+.popup-box button{
+    width:100%;
+    margin-top:18px;
+    border:none;
+    padding:12px;
+    border-radius:12px;
+    background:#ff007f;
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
+}
+
+@keyframes popup{
+
+from{
+opacity:0;
+transform:scale(.8);
+}
+
+to{
+opacity:1;
+transform:scale(1);
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+header h1{
+font-size:28px;
+}
+
+.cards{
+grid-template-columns:1fr;
+}
+
+.notice{
+flex-direction:column;
+}
+
+.card{
+padding:20px;
+}
+
+.icon{
+width:70px;
+height:70px;
+font-size:30px;
+}
+
+.documents,
+.process,
+.contact{
+padding:20px;
+}
+
+}

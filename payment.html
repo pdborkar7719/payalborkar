@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ऑनलाइन कर भरणा</title>
+
+<link rel="stylesheet" href="payment.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+<h1><i class="fa-solid fa-credit-card"></i> ऑनलाइन कर भरणा</h1>
+
+<p>ग्रामपंचायत डिजिटल पेमेंट सेवा</p>
+
+</header>
+
+<div class="secure">
+
+🔒 256-bit Secure Demo Payment
+
+</div>
+
+<form id="paymentForm">
+
+<div class="input-box">
+
+<label>पूर्ण नाव</label>
+
+<input type="text" required>
+
+</div>
+
+<div class="input-box">
+
+<label>मोबाईल नंबर</label>
+
+<input type="tel" required>
+
+</div>
+
+<div class="input-box">
+
+<label>घर क्रमांक</label>
+
+<input type="text" required>
+
+</div>
+
+<div class="input-box">
+
+<label>वार्ड क्रमांक</label>
+
+<select>
+
+<option>वार्ड 1</option>
+<option>वार्ड 2</option>
+<option>वार्ड 3</option>
+<option>वार्ड 4</option>
+<option>वार्ड 5</option>
+<option>वार्ड 6</option>
+
+</select>
+
+</div>
+
+<h2>कर निवडा</h2>
+
+<label><input type="checkbox" class="tax" value="1200"> घरपट्टी ₹1200</label>
+
+<label><input type="checkbox" class="tax" value="450"> पाणीपट्टी ₹450</label>
+
+<label><input type="checkbox" class="tax" value="800"> मालमत्ता कर ₹800</label>
+
+<h2 id="total">एकूण रक्कम : ₹0</h2>
+
+<h2>पेमेंट पद्धत</h2>
+
+<label><input type="radio" name="pay" checked> UPI</label>
+
+<label><input type="radio" name="pay"> Debit Card</label>
+
+<label><input type="radio" name="pay"> Credit Card</label>
+
+<label><input type="radio" name="pay"> Net Banking</label>
+
+<div class="qr">
+
+<img src="https://res.cloudinary.com/texs2dw9/image/upload/v1784871820/qr_zqag1m.png"alt="UPI OR Code">
+<p>UPI ID : <b>gpvillage@upi</b></p>
+
+</div>
+<div class="payment-info">
+    <p><strong>UPI ID:</strong> gpvillage@upi</p>
+    <p>📱 Google Pay • PhonePe • Paytm • BHIM</p>
+    <small>हे डेमो पेमेंट पेज आहे.</small>
+</div>
+
+<button type="submit">
+
+<i class="fa-solid fa-lock"></i>
+
+Pay Now
+
+</button>
+
+</form>
+
+<div id="popup" class="popup">
+
+<div class="popup-box">
+
+<i class="fa-solid fa-circle-check"></i>
+
+<h2>Payment Successful</h2>
+
+<p id="txn"></p>
+
+<button onclick="window.print()">🖨️ Print Receipt</button>
+
+<button onclick="location.href='index.html'">🏠 Home</button>
+
+</div>
+
+</div>
+
+
+<script src="payment.js"></script>
+
+</body>
+</html>

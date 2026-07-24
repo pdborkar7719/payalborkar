@@ -1,0 +1,153 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Mukta',sans-serif;
+}
+
+body{
+    background:linear-gradient(to bottom,#fff0f7,#f4f4f4);
+}
+
+.container{
+max-width:450px;
+margin:auto;
+padding:15px;
+padding-bottom:30px;
+}
+
+header{
+    background:linear-gradient(135deg,#ff0a8a,#ff4da6);
+    color:#fff;
+    padding:20px;
+    border-bottom-left-radius:30px;
+    border-bottom-right-radius:30px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    box-shadow:0 8px 20px rgba(255,0,128,.25);
+}
+
+.back{
+    width:42px;
+    height:42px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:rgba(255,255,255,.25);
+    color:#fff;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+}
+
+.back:hover{
+    background:#fff;
+    color:#ff007f;
+}
+
+.form-box{
+    background:#fff;
+    margin-top:18px;
+    padding:22px;
+    border-radius:22px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    border:1px solid #f3f3f3;
+}
+
+.form-box h2{
+    text-align:center;
+    color:#ff007f;
+    margin-bottom:22px;
+    font-size:24px;
+}
+
+.input-box{
+    margin-bottom:18px;
+}
+
+.input-box label{
+    display:block;
+    margin-bottom:8px;
+    font-size:15px;
+    font-weight:700;
+    color:#444;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:14px 15px;
+    border:2px solid #ececec;
+    border-radius:14px;
+    font-size:15px;
+    transition:.3s;
+    background:#fafafa;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    border-color:#ff007f;
+    background:#fff;
+    box-shadow:0 0 0 4px rgba(255,0,127,.12);
+    outline:none;
+}
+
+textarea{
+resize:none;
+}
+button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:14px;
+    background:linear-gradient(135deg,#ff007f,#ff4fa6);
+    color:#fff;
+    font-size:17px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 8px 18px rgba(255,0,127,.30);
+}
+
+button:hover{
+    transform:translateY(-2px);
+    box-shadow:0 12px 24px rgba(255,0,127,.40);
+}
+
+button:active{
+    transform:scale(.98);
+}
+
+
+@media(min-width:768px){
+
+.container{
+
+max-width:700px;
+
+}
+
+header h1{
+
+font-size:30px;
+
+}
+
+}
+.info-box{
+    background:#fff5e8;
+    color:#9a5b00;
+    padding:14px;
+    border-radius:14px;
+    margin-bottom:20px;
+    font-size:14px;
+    border-left:5px solid #f59e0b;
+}
+
+.info-box i{
+    margin-right:8px;
+}

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="mr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>जन्म व मृत्यू नोंदणी</title>
+
+<link rel="stylesheet" href="janm.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+<h1>
+
+<i class="fa-solid fa-baby"></i>
+
+जन्म व मृत्यू नोंदणी
+
+</h1>
+
+<p>
+
+ग्रामपंचायत जन्म व मृत्यू प्रमाणपत्र सेवा
+
+</p>
+
+</header>
+
+<!-- Notice -->
+
+<div class="notice">
+
+<i class="fa-solid fa-circle-info"></i>
+
+<div>
+
+<h3>महत्त्वाची सूचना</h3>
+
+<p>
+
+जन्म किंवा मृत्यूची नोंद २१ दिवसांच्या आत करणे आवश्यक आहे.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- Services -->
+
+<div class="cards">
+
+<!-- Birth -->
+
+<div class="card">
+
+<div class="icon">
+
+<i class="fa-solid fa-baby"></i>
+
+</div>
+
+<h2>जन्म नोंदणी</h2>
+
+<p>
+
+नवीन जन्माची नोंदणी व जन्म प्रमाणपत्र.
+
+</p>
+
+<button onclick="openPopup(
+
+'जन्म नोंदणी',
+
+'• हॉस्पिटल प्रमाणपत्र<br>• आई-वडिलांचे आधार कार्ड<br>• अर्ज',
+
+'₹30',
+
+'३ दिवस'
+
+)">
+
+अधिक माहिती
+
+</button>
+
+</div>
+
+<!-- Death -->
+
+<div class="card">
+
+<div class="icon">
+
+<i class="fa-solid fa-cross"></i>
+
+</div>
+
+<h2>मृत्यू नोंदणी</h2>
+
+<p>
+
+मृत्यूची अधिकृत नोंद व प्रमाणपत्र.
+
+</p>
+
+<button onclick="openPopup(
+
+'मृत्यू नोंदणी',
+
+'• हॉस्पिटल प्रमाणपत्र<br>• आधार कार्ड<br>• अर्ज',
+
+'₹30',
+
+'३ दिवस'
+
+)">
+
+अधिक माहिती
+
+</button>
+
+</div>
+
+<!-- Duplicate -->
+
+<div class="card">
+
+<div class="icon">
+
+<i class="fa-solid fa-file-circle-check"></i>
+
+</div>
+
+<h2>डुप्लिकेट प्रमाणपत्र</h2>
+
+<p>
+
+हरवलेले प्रमाणपत्र पुन्हा मिळवा.
+
+</p>
+
+<button onclick="openPopup(
+
+'डुप्लिकेट प्रमाणपत्र',
+
+'• आधार कार्ड<br>• अर्ज',
+
+'₹50',
+
+'५ दिवस'
+
+)">
+
+अधिक माहिती
+
+</button>
+
+</div>
+
+<!-- Correction -->
+
+<div class="card">
+
+<div class="icon">
+
+<i class="fa-solid fa-pen-to-square"></i>
+
+</div>
+
+<h2>नोंद दुरुस्ती</h2>
+
+<p>
+
+नाव, तारीख किंवा इतर माहिती दुरुस्ती.
+
+</p>
+
+<button onclick="openPopup(
+
+'नोंद दुरुस्ती',
+
+'• जुने प्रमाणपत्र<br>• आधार कार्ड',
+
+'₹50',
+
+'७ दिवस'
+
+)">
+
+अधिक माहिती
+
+</button>
+
+</div>
+
+</div>
+
+<!-- Documents -->
+
+<section class="documents">
+
+<h2>
+
+<i class="fa-solid fa-folder-open"></i>
+
+आवश्यक कागदपत्रे
+
+</h2>
+
+<ul>
+
+<li>आधार कार्ड</li>
+
+<li>रुग्णालयाचे प्रमाणपत्र</li>
+
+<li>पासपोर्ट फोटो</li>
+
+<li>अर्ज</li>
+
+<li>रेशन कार्ड (लागू असल्यास)</li>
+
+</ul>
+
+</section>
+
+<!-- Timeline -->
+
+<section class="timeline">
+
+<h2>
+
+<i class="fa-solid fa-list-check"></i>
+
+अर्ज प्रक्रिया
+
+</h2>
+
+<div class="step">1️⃣ अर्ज भरा</div>
+
+<div class="step">2️⃣ कागदपत्रे जोडा</div>
+
+<div class="step">3️⃣ ग्रामपंचायतीत जमा करा</div>
+
+<div class="step">4️⃣ प्रमाणपत्र मिळवा</div>
+
+</section>
+
+<!-- FAQ -->
+
+<section class="faq">
+
+<h2>
+
+<i class="fa-solid fa-circle-question"></i>
+
+नेहमी विचारले जाणारे प्रश्न
+
+</h2>
+
+<div class="faq-box">
+
+<h3>जन्म नोंदणी किती दिवसांत करावी?</h3>
+
+<p>२१ दिवसांच्या आत.</p>
+
+</div>
+
+<div class="faq-box">
+
+<h3>प्रमाणपत्र किती दिवसांत मिळेल?</h3>
+
+<p>साधारण ३ ते ५ दिवस.</p>
+
+</div>
+
+</section>
+
+<!-- Contact -->
+
+<section class="contact">
+
+<h2>
+
+<i class="fa-solid fa-phone"></i>
+
+संपर्क
+
+</h2>
+
+<p>📞 02400-123456</p>
+
+<p>📧 grampanchayat@gmail.com</p>
+
+<p>🕘 सकाळी 10 ते संध्याकाळी 5</p>
+
+</section>
+
+<button class="back-btn"
+
+onclick="window.location.href='index.html'">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+मागे घ्या
+
+</button>
+
+</div>
+
+<!-- Popup -->
+
+<div class="popup" id="popup">
+
+<div class="popup-box">
+
+<h2 id="title"></h2>
+
+<p><b>आवश्यक कागदपत्रे</b></p>
+
+<p id="docs"></p>
+
+<p><b>शुल्क :</b> <span id="fee"></span></p>
+
+<p><b>कालावधी :</b> <span id="time"></span></p>
+
+<button onclick="closePopup()">
+
+ठीक आहे
+
+</button>
+
+</div>
+
+</div>
+
+<script src="janm.js"></script>
+
+</body>
+
+</html>

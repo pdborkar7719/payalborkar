@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>दाखले व प्रमाणपत्रे</title>
+
+    <link rel="stylesheet" href="dakhale.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+<h1>
+<i class="fa-solid fa-file-circle-check"></i>
+दाखले व प्रमाणपत्रे
+</h1>
+
+<p>
+ग्रामपंचायत मार्फत उपलब्ध असलेल्या दाखल्यांची माहिती
+</p>
+
+</header>
+
+
+<!-- Notice -->
+
+<div class="notice">
+
+<i class="fa-solid fa-circle-info"></i>
+
+<div>
+
+<h3>महत्त्वाची सूचना</h3>
+
+<p>
+
+कृपया अर्ज करण्यापूर्वी आवश्यक कागदपत्रे तयार ठेवा.
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<!-- Cards -->
+
+<div class="cards">
+
+<div class="card">
+
+<div class="icon">
+<i class="fa-solid fa-house"></i>
+</div>
+
+<h2>रहिवासी दाखला</h2>
+
+<p>
+गावातील कायमस्वरूपी राहण्याचा दाखला.
+</p>
+
+<button onclick="openPopup(
+'रहिवासी दाखला',
+'आधार कार्ड<br>रेशन कार्ड<br>१ फोटो',
+'₹20',
+'३ दिवस'
+)">
+अधिक माहिती
+</button>
+
+</div>
+
+
+
+<div class="card">
+
+<div class="icon">
+<i class="fa-solid fa-wallet"></i>
+</div>
+
+<h2>उत्पन्नाचा दाखला</h2>
+
+<p>
+
+वार्षिक उत्पन्न प्रमाणपत्र.
+
+</p>
+
+<button onclick="openPopup(
+'उत्पन्नाचा दाखला',
+'आधार कार्ड<br>रेशन कार्ड<br>उत्पन्न पुरावा',
+'₹30',
+'५ दिवस'
+)">
+अधिक माहिती
+</button>
+
+</div>
+
+
+
+<div class="card">
+
+<div class="icon">
+<i class="fa-solid fa-building"></i>
+</div>
+
+<h2>घरपट्टी दाखला</h2>
+
+<p>
+
+घरपट्टी भरल्याचे प्रमाणपत्र.
+
+</p>
+
+<button onclick="openPopup(
+'घरपट्टी दाखला',
+'आधार कार्ड<br>घरपट्टी पावती',
+'₹20',
+'२ दिवस'
+)">
+अधिक माहिती
+</button>
+
+</div>
+
+
+
+<div class="card">
+
+<div class="icon">
+<i class="fa-solid fa-faucet-drip"></i>
+</div>
+
+<h2>नळ जोडणी</h2>
+
+<p>
+
+नवीन पाणी जोडणी अर्ज.
+
+</p>
+
+<button onclick="openPopup(
+'नळ जोडणी',
+'आधार कार्ड<br>घराचा पुरावा',
+'₹100',
+'७ दिवस'
+)">
+अधिक माहिती
+</button>
+
+</div>
+
+
+
+<div class="card">
+
+<div class="icon">
+<i class="fa-solid fa-stamp"></i>
+</div>
+
+<h2>NOC</h2>
+
+<p>
+
+ना हरकत प्रमाणपत्र.
+
+</p>
+
+<button onclick="openPopup(
+'NOC',
+'आधार कार्ड<br>अर्ज',
+'₹50',
+'५ दिवस'
+)">
+अधिक माहिती
+</button>
+
+</div>
+
+
+
+<div class="card">
+
+<div class="icon">
+<i class="fa-solid fa-tree-city"></i>
+</div>
+
+<h2>बांधकाम परवानगी</h2>
+
+<p>
+
+घर बांधकामासाठी परवानगी.
+
+</p>
+
+<button onclick="openPopup(
+'बांधकाम परवानगी',
+'नकाशा<br>आधार कार्ड<br>7/12',
+'₹500',
+'१५ दिवस'
+)">
+अधिक माहिती
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- Documents -->
+
+<section class="documents">
+
+<h2>
+
+<i class="fa-solid fa-folder-open"></i>
+
+आवश्यक कागदपत्रे
+
+</h2>
+
+<ul>
+
+<li>आधार कार्ड</li>
+
+<li>रेशन कार्ड</li>
+
+<li>मतदान ओळखपत्र</li>
+
+<li>पासपोर्ट फोटो</li>
+
+<li>अर्ज</li>
+
+</ul>
+
+</section>
+
+
+
+
+<!-- Process -->
+
+<section class="process">
+
+<h2>
+
+<i class="fa-solid fa-list-check"></i>
+
+अर्ज प्रक्रिया
+
+</h2>
+
+<div class="step">१. अर्ज भरा</div>
+
+<div class="step">२. कागदपत्रे जोडा</div>
+
+<div class="step">३. ग्रामपंचायतीत जमा करा</div>
+
+<div class="step">४. दाखला प्राप्त करा</div>
+
+</section>
+
+
+
+
+<!-- Contact -->
+
+<section class="contact">
+
+<h2>
+
+<i class="fa-solid fa-phone"></i>
+
+मदत केंद्र
+
+</h2>
+
+<p>
+
+📞 02400-123456
+
+</p>
+
+<p>
+
+📧 grampanchayat@gmail.com
+
+</p>
+
+<p>
+
+🕘 सकाळी 10 ते संध्याकाळी 5
+
+</p>
+
+</section>
+
+
+
+<button class="back-btn"
+
+onclick="window.location.href='index.html'">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+मागे घ्या
+
+</button>
+
+
+</div>
+
+
+
+<!-- Popup -->
+
+<div class="popup" id="popup">
+
+<div class="popup-box">
+
+<h2 id="title"></h2>
+
+<p><b>आवश्यक कागदपत्रे</b></p>
+
+<p id="docs"></p>
+
+<p><b>शुल्क :</b> <span id="fee"></span></p>
+
+<p><b>कालावधी :</b> <span id="time"></span></p>
+
+<button onclick="closePopup()">
+
+ठीक आहे
+
+</button>
+
+</div>
+
+</div>
+
+<script src="dakhale.js"></script>
+
+</body>
+</html>

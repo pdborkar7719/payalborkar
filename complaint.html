@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>तक्रार नोंदणी</title>
+
+    <link rel="stylesheet" href="complaint.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+<header>
+
+<a href="index.html" class="back">
+<i class="fa-solid fa-arrow-left"></i>
+</a>
+
+<h1>तक्रार नोंदणी</h1>
+
+</header>
+<div class="info-box">
+    <i class="fa-solid fa-circle-info"></i>
+    कृपया सर्व माहिती अचूक भरा. चुकीची माहिती दिल्यास अर्ज स्वीकारला जाणार नाही.
+</div>
+
+
+<div class="form-box">
+
+<h2>आपली तक्रार नोंदवा</h2>
+
+<form>
+
+<div class="input-box">
+<label>पूर्ण नाव</label>
+<input type="text" placeholder="आपले नाव">
+</div>
+
+<div class="input-box">
+<label>मोबाईल नंबर</label>
+<input type="tel" placeholder="9876543210">
+</div>
+
+<div class="input-box">
+<label>पत्ता</label>
+<textarea placeholder="पूर्ण पत्ता"></textarea>
+</div>
+
+<div class="input-box">
+<label>तक्रार प्रकार</label>
+
+<select>
+
+<option>तक्रार निवडा</option>
+
+<option>पाणीपुरवठा</option>
+
+<option>स्वच्छता</option>
+
+<option>रस्ता</option>
+
+<option>लाईट</option>
+
+<option>कर</option>
+
+<option>इतर</option>
+
+</select>
+
+</div>
+
+<div class="input-box">
+<label>तक्रारीचे वर्णन</label>
+
+<textarea rows="5"
+placeholder="तक्रारीचे पूर्ण वर्णन लिहा"></textarea>
+
+</div>
+
+<div class="input-box">
+
+<label>फोटो अपलोड करा</label>
+
+<input type="file">
+
+</div>
+
+<button type="submit">
+
+<i class="fa-solid fa-paper-plane"></i>
+
+सबमिट करा
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+<div class="back-home">
+    <button type="button" onclick="goBack()">
+        <i class="fa-solid fa-arrow-left"></i>
+        मागे घ्या
+    </button>
+</div>
+
+<script>
+document.querySelector("form").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    alert("✅ आपली तक्रार यशस्वीरित्या नोंदवली गेली.");
+
+    this.reset();
+
+    setTimeout(function(){
+        window.location.href="index.html";
+    },800);
+});
+</script>
+<script>
+
+function goBack(){
+
+    window.location.href="index.html";
+
+}
+
+</script>
+
+</body>
+</html>
