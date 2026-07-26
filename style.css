@@ -288,27 +288,16 @@ SECTION TITLE
     box-shadow:0 -4px 15px rgba(0,0,0,.12);
     z-index:999;
 }
+
 .nav-item{
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:center;
-    text-decoration:none;   /* Underline remove */
-    color:#000;             /* Text black */
+    color:#666;
     font-size:13px;
     font-weight:600;
 }
-
-.nav-item span{
-    color:#000;
-}
-
-.nav-item i{
-    font-size:24px;
-    margin-bottom:4px;
-    color:#ff007f;          /* Icons pink */
-}
-
 
 .nav-item i{
     font-size:24px;
@@ -536,4 +525,24 @@ SECTION TITLE
         opacity:1;
         transform:scale(1);
     }
+}
+.news-link{
+    display:block;
+    text-decoration:none;
+}
+
+.news-link:hover{
+    text-decoration:none;
+}
+
+/* Sirf text se underline hatao */
+.news-link h4,
+.news-link span{
+    text-decoration:none;
+    color:#000;
+}
+
+/* Icon ka original color wapas */
+.news-link i.pink{
+    color:#ff0080;
 }
