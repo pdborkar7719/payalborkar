@@ -288,16 +288,27 @@ SECTION TITLE
     box-shadow:0 -4px 15px rgba(0,0,0,.12);
     z-index:999;
 }
-
 .nav-item{
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:center;
-    color:#666;
+    text-decoration:none;   /* Underline remove */
+    color:#000;             /* Text black */
     font-size:13px;
     font-weight:600;
 }
+
+.nav-item span{
+    color:#000;
+}
+
+.nav-item i{
+    font-size:24px;
+    margin-bottom:4px;
+    color:#ff007f;          /* Icons pink */
+}
+
 
 .nav-item i{
     font-size:24px;
